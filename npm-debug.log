@@ -1,0 +1,149 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'oath' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'oath', null ]
+5 verbose cache add name=undefined spec="oath" args=["oath",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'oath',
+6 verbose parsed url   path: 'oath',
+6 verbose parsed url   href: 'oath' }
+7 silly lockFile 2830d7ac-oath oath
+8 verbose lock oath /Users/cooper09/.npm/2830d7ac-oath.lock
+9 silly lockFile 2830d7ac-oath oath
+10 silly lockFile 2830d7ac-oath oath
+11 verbose addNamed [ 'oath', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 69db3b7c-oath oath@
+14 verbose lock oath@ /Users/cooper09/.npm/69db3b7c-oath.lock
+15 silly addNameRange { name: 'oath', range: '*', hasData: false }
+16 verbose request where is /oath
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id eed5a72b34f06add
+19 verbose url raw /oath
+20 verbose url resolving [ 'https://registry.npmjs.org/', './oath' ]
+21 verbose url resolved https://registry.npmjs.org/oath
+22 verbose request where is https://registry.npmjs.org/oath
+23 info trying registry request attempt 1 at 22:27:09
+24 http GET https://registry.npmjs.org/oath
+25 http 200 https://registry.npmjs.org/oath
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"1D4BGFQ9IL8197Q7PFCD12BUL"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '24529',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Tue, 30 Jun 2015 02:27:09 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-atl6223-ATL',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1435631229.066896,VS0,VE169',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'oath', range: '*', hasData: true }
+28 silly addNameRange versions [ 'oath',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '1.0.0' ] ]
+29 verbose addNamed [ 'oath', '1.0.0' ]
+30 verbose addNamed [ '1.0.0', '1.0.0' ]
+31 silly lockFile c010e7aa-oath-1-0-0 oath@1.0.0
+32 verbose lock oath@1.0.0 /Users/cooper09/.npm/c010e7aa-oath-1-0-0.lock
+33 silly lockFile 676c4a4c-ry-npmjs-org-oath-oath-1-0-0-tgz https://registry.npmjs.org/oath/-/oath-1.0.0.tgz
+34 verbose lock https://registry.npmjs.org/oath/-/oath-1.0.0.tgz /Users/cooper09/.npm/676c4a4c-ry-npmjs-org-oath-oath-1-0-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/oath/-/oath-1.0.0.tgz',
+35 verbose addRemoteTarball   '2f4e1f7797b903a78b243527dc68245b0aeb0d58' ]
+36 info retry fetch attempt 1 at 22:27:09
+37 verbose fetch to= /var/folders/7t/4wr893z11vj8fpgxrwhdxhr00000gn/T/npm-697-x1H6xm48/registry.npmjs.org/oath/-/oath-1.0.0.tgz
+38 http GET https://registry.npmjs.org/oath/-/oath-1.0.0.tgz
+39 http 200 https://registry.npmjs.org/oath/-/oath-1.0.0.tgz
+40 silly lockFile 676c4a4c-ry-npmjs-org-oath-oath-1-0-0-tgz https://registry.npmjs.org/oath/-/oath-1.0.0.tgz
+41 silly lockFile 676c4a4c-ry-npmjs-org-oath-oath-1-0-0-tgz https://registry.npmjs.org/oath/-/oath-1.0.0.tgz
+42 silly lockFile c010e7aa-oath-1-0-0 oath@1.0.0
+43 silly lockFile c010e7aa-oath-1-0-0 oath@1.0.0
+44 silly lockFile 69db3b7c-oath oath@
+45 silly lockFile 69db3b7c-oath oath@
+46 silly resolved [ { name: 'oath',
+46 silly resolved     version: '1.0.0',
+46 silly resolved     description: 'Thunk-based flow control with fallback support for callbacks.',
+46 silly resolved     author: { name: 'Jake Luer', email: 'jake@alogicalparadox.com' },
+46 silly resolved     homepage: 'http://alogicalparadox.com/oath',
+46 silly resolved     repository: { type: 'git', url: 'git://github.com/logicalparadox/oath.git' },
+46 silly resolved     main: './index',
+46 silly resolved     scripts: { test: 'node_modules/goodwin/bin/goodwin' },
+46 silly resolved     engines: { node: '>= 0.8.0' },
+46 silly resolved     dependencies: { 'simple-assert': '~1.0.0' },
+46 silly resolved     devDependencies:
+46 silly resolved      { co: '~3.0.1',
+46 silly resolved        goodwin: 'https://github.com/logicalparadox/goodwin/tarball/master' },
+46 silly resolved     readme: '# Oath [![Build Status](https://secure.travis-ci.org/logicalparadox/oath.png)](http://travis-ci.org/logicalparadox/oath)\n\n> Thunk-based flow control with fallback support for callbacks. Primarily for use\n> with [co](https://github.com/visionmedia/co).\n\n## Installation\n\nOath is available for both server-side and the browser.\n\n### Node.js\n\nPackage is available through [npm](http://npmjs.org):\n\n    npm install oath\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2011-2014 Jake Luer <jake@alogicalparadox.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n',
+46 silly resolved     readmeFilename: 'README.md',
+46 silly resolved     bugs: { url: 'https://github.com/logicalparadox/oath/issues' },
+46 silly resolved     _id: 'oath@1.0.0',
+46 silly resolved     dist:
+46 silly resolved      { shasum: '2f4e1f7797b903a78b243527dc68245b0aeb0d58',
+46 silly resolved        tarball: 'http://registry.npmjs.org/oath/-/oath-1.0.0.tgz' },
+46 silly resolved     _from: 'oath@',
+46 silly resolved     _npmVersion: '1.3.15',
+46 silly resolved     _npmUser: { name: 'jakeluer', email: 'jake@alogicalparadox.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: '2f4e1f7797b903a78b243527dc68245b0aeb0d58',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/oath/-/oath-1.0.0.tgz' } ]
+47 info install oath@1.0.0 into /usr/local/lib
+48 info installOne oath@1.0.0
+49 verbose lib/node_modules/oath unbuild
+50 verbose tar unpack /Users/cooper09/.npm/oath/1.0.0/package.tgz
+51 silly lockFile 845c81fb--usr-local-lib-node-modules-oath tar:///usr/local/lib/node_modules/oath
+52 verbose lock tar:///usr/local/lib/node_modules/oath /Users/cooper09/.npm/845c81fb--usr-local-lib-node-modules-oath.lock
+53 silly lockFile 27a22c92-per09-npm-oath-1-0-0-package-tgz tar:///Users/cooper09/.npm/oath/1.0.0/package.tgz
+54 verbose lock tar:///Users/cooper09/.npm/oath/1.0.0/package.tgz /Users/cooper09/.npm/27a22c92-per09-npm-oath-1-0-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/oath'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/oath']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/oath',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/oath',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.0.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "oath"
+60 error cwd /Users/cooper09/Node/Calendar
+61 error node -v v0.10.33
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/oath
+64 error fstream_path /usr/local/lib/node_modules/oath
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/oath'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]

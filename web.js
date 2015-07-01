@@ -13,8 +13,8 @@ var q = require('q');
 var oa;
 var app = express();
 
-var clientId = 'GOOGLE_CLIENT_ID';
-var clientSecret = 'GOOGLE_CLIENT_SECRET';
+var clientId = '283675943940-34ueq5ba21eah6qsa3t3nms8i1h9n3jp.apps.googleusercontent.co';
+var clientSecret = 'teUCKWidOD57h09YhOG4GWhM';
 var scopes = 'https://www.googleapis.com/auth/calendar';
 var googleUserId;
 var refreshToken;
@@ -26,25 +26,27 @@ var baseUrl;
 app.configure('development',function(){
   console.log('!! DEVELOPMENT MODE !!');
 
-  googleUserId = 'GOOGLE_EMAIL_ADDRESS';
+  googleUserId = 'cooperatkmba@gmail.com';
   refreshToken = 'GOOGLE_REFRESH_TOKEN';
-  baseUrl = 'DEV_API_URL';
+  baseUrl = 'http://localhost:8888';
 });
 
 app.configure('production', function(){
   console.log('!! PRODUCTION MODE !!');
 
-  googleUserId = 'GOOGLE_EMAIL_ADDRESS';
+  googleUserId = '283675943940-34ueq5ba21eah6qsa3t3nms8i1h9n3jp@developer.gserviceaccount.com';
   refreshToken = 'GOOGLE_REFRESH_TOKEN';
-  baseUrl = 'PRODUCTION_API_URL';
+  baseUrl = 'http://sonyainc.net/harelemres';
 });
 
 var allowCrossDomain = function(req, res, next){
 
   //instantiate allowed domains list
   var allowedDomains = [
-    'http://YOUR_DOMAIN.com',
-    'https://YOUR_DOMAIN.com'
+    'http://localhost:8888',
+    'https://localhost:8888',
+    'http://sonyainc.net',
+    'https://sonyainc.net'
   ];
 
   //check if request origin is in allowed domains list
